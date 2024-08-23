@@ -40,24 +40,24 @@ This script generates a large number of sockets per second on your system. This 
 Run the script from the command line with the following syntax:
 
 ```
-sudo python3 paloalto_nat_tester.py <scenario> [--dst_ip <ip>] [--dst_subnet <subnet>]
+python3 paloalto_nat_tester.py <scenario> [--dst_ip <ip>] [--dst_subnet <subnet>]
 ```
 
 ### Usage Examples
 
 1. Generate 65K concurrent sessions to a specific IP:
    ```
-   sudo python3 paloalto_nat_tester.py 65K --dst_ip 192.168.1.1
+   python3 paloalto_nat_tester.py 65K --dst_ip 192.168.1.1
    ```
 
 2. Generate 512K concurrent sessions to a subnet:
    ```
-   sudo python3 paloalto_nat_tester.py 512K --dst_subnet 192.168.0.0/24
+   python3 paloalto_nat_tester.py 512K --dst_subnet 192.168.0.0/24
    ```
 
 3. Generate 4M concurrent sessions using the default subnet:
    ```
-   sudo python3 paloalto_nat_tester.py 4M
+   python3 paloalto_nat_tester.py 4M
    ```
 
 ### Arguments
