@@ -25,7 +25,7 @@ def create_udp_socket(src_ip, src_port, dst_ip, dst_port, protocol):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_UDP)
         sock.setsockopt(socket.IPPROTO_IP, socket.IP_HDRINCL, 1)
-    except Permission Error:
+    except PermissionError:
         logger.error("Permission denied when creating socket")
         raise
     except Exception as e:
